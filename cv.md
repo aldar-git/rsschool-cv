@@ -56,3 +56,12 @@ function plagiat(){
 * Graduation work
 * Kalmyk State University, lead developer, department of information
 * Pension Fund of the Russian Federation, specialist, information technology department
+
+## Education
+
+Kalmyk State University, The Department of Mathematics, Physics and Information Technology, Bachelor’s programs: Fundamental Informatics and Information Technologies
+
+## Language
+
+* Russian - Native
+* English - A1-Basic
