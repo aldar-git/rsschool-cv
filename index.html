@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>RSSCHOOL-CV | Aldar Amteev's CV</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/img.jpg">
+            <h1>Aldar Amteev</h1>
+            <p>Telegram: <a href="https://t.me/folkrit">Aldar Amteev(@folkrit)</a></p>
+        </header>
+        <main>
+            <section>
+                <h1>Summary</h1>
+                <p>My goal is to improve my programming skills</p>
+            </section>
+            <section>
+                <h1>Skills</h1>
+                <ul>
+                    <li>C#</li>
+                    <li>MS SQL</li>
+                    <li>HTML/CSS</li>
+                    <li>PHP</li>
+                    <li>JS</li>
+                </ul>
+            </section>
+            <section>
+                <h1>Code examples</h1>
+                <p>File transfer and getting the result via Ajax</p>
+                <div class="code">
+                    <code>
+                        function plagiat(){<br>
+                            $("#loadImg").show();<br>
+                            var datafile = new FormData();<br>
+                            datafile.append('userfile', $('#userfile').prop('files')[0])<br>
+                            if ($('#userfile').prop('files')[0]==null)<br>
+                            {<br>
+                                alert("Необходимо выбрать файл");<br>
+                                $("#loadImg").hide();<br>
+                            }<br>
+                            else<br>
+                            {<br>
+                                $.ajax({<br>
+                                    type: 'POST',<br>
+                                    url: "../js/ajax/antiplagiat.php",<br>
+                                    data: datafile,<br>
+                                    dataType: 'text',<br>
+                                    cache: false,<br>
+                                    contentType: false,<br>
+                                    processData: false,<br>
+                                    success: function(result){<br>
+                                        $("#resultTab").html(result);<br>
+                                        his();<br>
+                                        $("#loadImg").hide();<br>
+                                    },<br>
+                                    error:  function(xhr, str){<br>
+                                        alert('Возникла ошибка: ' + xhr.responseCode);<br>
+                                        $("#loadImg").hide();<br>
+                                    }<br>
+                                });<br>
+                            }<br>
+                        }<br>
+                    </code>
+                </div>
+            </section>
+            <section>
+                <h1>Experience</h1>
+                <ul>
+                    <li>Graduation work</li>
+                    <li>Kalmyk State University, lead developer, department of information</li>
+                    <li>Pension Fund of the Russian Federation, specialist, information technology department</li>
+                </ul>
+            </section>
+            <section>
+                <h1>Education</h1>
+                <p>Kalmyk State University, The Department of Mathematics, Physics and Information Technology, Bachelor’s programs: Fundamental Informatics and Information Technologies</p>
+            </section>
+            <section>
+                <h1>Language</h1>
+                <ul>
+                    <li>Russian - Native</li>
+                    <li>English - A1-Basic</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright &copy Aldar Amteev 2020 All rights reserved</p>
+        </footer>   
+    </body>
+</html>
