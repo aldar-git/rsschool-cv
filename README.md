@@ -1,1 +1,1 @@
-# rsschool-cv
+[https://aldar-git.github.io/rsschool-cv/cv](https://aldar-git.github.io/rsschool-cv/cv)
