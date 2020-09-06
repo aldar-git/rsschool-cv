@@ -1,6 +1,6 @@
 # Aldar Amteev
 
-* Telegram: [Aldar Amteev(@folkrit)](https://t.me/folkrit)
+* Telegram: [@folkrit](https://t.me/folkrit)
 
 ## Summary
 
